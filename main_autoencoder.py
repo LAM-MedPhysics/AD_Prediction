@@ -73,7 +73,9 @@ def main(options):
     for epoch in range(options.epochs):
         train_loss = 0.
         print("At {0}-th epoch.".format(epoch))
+        print(train_loader)
         for i, patches in enumerate(train_loader):
+            print(i, patches)
             patch = patches['patch']
             for b, batch in enumerate(patch):
                 batch = Variable(batch).cuda()
