@@ -40,7 +40,7 @@ def main(options):
         TRAINING_PATH = 'train_2classes.txt'
     else:
         TRAINING_PATH = 'train.txt'
-    IMG_PATH = './Whole'
+    IMG_PATH = '/kaggle/input/lam-med-ai/vsi_prerezi'
 
     dset_train = AD_Standard_3DRandomPatch(IMG_PATH, TRAINING_PATH)
 
@@ -60,7 +60,7 @@ def main(options):
     autoencoder = AutoEncoder()
 
     if(use_gpu):
-        autoencoder = autoencoder.cuda()
+        autoencoder = autoencoder.cpu()
     else:
         autoencoder = autoencoder.cpu()
 
