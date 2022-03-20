@@ -112,7 +112,7 @@ def main(options):
     # model.load_state_dict(torch.load(options.load))
 
     if use_cuda > 0:
-        model.cuda()
+        model.cpu()
     else:
         model.cpu()
 
