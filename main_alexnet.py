@@ -68,7 +68,7 @@ def main(options):
     # Path configuration
     TRAINING_PATH = 'train_2classes.txt'
     TESTING_PATH = 'test_2classes.txt'
-    IMG_PATH = './Image'
+    IMG_PATH = '../input/lam-med-ai/vsi_prerezi'
 
     trg_size = (224, 224)
 
