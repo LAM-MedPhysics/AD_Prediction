@@ -103,8 +103,8 @@ def main(options):
                              )
 
     use_cuda = (len(options.gpuid) >= 1)
-    if options.gpuid:
-        cuda.set_device(options.gpuid[0])
+    #if options.gpuid:
+    #    cuda.set_device(options.gpuid[0])
 
 
     # Initial the model
